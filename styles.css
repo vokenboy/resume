@@ -1,10 +1,11 @@
 /* Custom CSS styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #f4f4f4;
-  color: #333;
+  color: #354649; /* Set text color to #354649 */
   opacity: 0; /* Set initial opacity to 0 */
   animation: fadeIn 1s ease-in forwards; /* Apply fade-in animation */
 }
@@ -20,7 +21,6 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
   min-width: 600px; /* Adjust the value as needed to maintain the desired width */
 }
 
@@ -94,17 +94,11 @@ img:hover {
   margin-bottom: 0;
 }
 
-.right-section {
-  flex: 2;
-  margin-top: 40px;
-}
-
 .button-container {
   border: none;
   padding: 10px;
   margin-right: 20px;
   transition: transform 0.2s;
-  
 }
 
 .link {
@@ -137,7 +131,7 @@ img:hover {
 .social-media-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .social-media-list li {
@@ -162,12 +156,6 @@ img:hover {
 }
 
 /* Styles for larger screens */
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Styles for tablet screens */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -245,6 +233,7 @@ img:hover {
   z-index: 2;
   /* Additional styles for the selection class objects */
 }
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -257,7 +246,82 @@ img:hover {
   }
 
   .left-section {
-    border-right: none; /* Remove the border-right property */
+    border-right: none; 
   }
 }
 
+.section ul {
+  margin: 20px;
+  padding: 0;
+  list-style-type: disc; 
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.skill-fill {
+  height: 100%;
+  background-color: #6C7A89; 
+}
+
+.skill-bar {
+  background-color: #c5c5c5;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 80%; 
+}
+
+.skill-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-column {
+  flex-basis: calc(50% - 5px);
+}
+
+.skill-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.skill-list li {
+  margin-bottom: 10px;
+}
+
+.skill-fill {
+  height: 100%;
+  background-color: #333; /* Skill fill color */
+}
+
+.skill-bar {
+  background-color: #c5c5c5;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.section ul.skill-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove bullet points */
+}
+
+.section ul.skill-list li {
+  margin-bottom: 10px;
+  list-style: none; /* Remove bullet points */
+}
