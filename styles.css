@@ -325,3 +325,8 @@ img:hover {
   margin-bottom: 10px;
   list-style: none; /* Remove bullet points */
 }
+
+#about {
+    list-style-type: none;
+}
+
