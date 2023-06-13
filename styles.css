@@ -56,6 +56,7 @@ img {
   border-radius: 20px;
   margin-top: 20px;
   transition: transform 0.2s;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 img:hover {
@@ -74,25 +75,10 @@ img:hover {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
-.section p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.section ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .section ul li {
   margin-bottom: 10px;
 }
 
-.section ul li:last-child {
-  margin-bottom: 0;
-}
 
 .button-container {
   border: none;
@@ -184,7 +170,6 @@ img:hover {
 }
 
 @media (max-width: 768px) {
-  /* Adjust the breakpoint as needed */
   .container .middle-line {
     display: none;
   }
@@ -213,10 +198,6 @@ img:hover {
 
 .container {
   position: relative;
-}
-
-.content {
-  /* Additional styles for the content */
 }
 
 .buttons {
@@ -276,6 +257,7 @@ img:hover {
 .skill-name {
   margin-bottom: 5px;
   font-weight: bold;
+  font-family: "Cascadia Code", monospace;
 }
 
 .skill-container {
@@ -324,11 +306,19 @@ img:hover {
 }
 
 .section ul.skill-list li {
-  margin-bottom: 10px;
   list-style: none; /* Remove bullet points */
 }
 
 #about {
     list-style-type: none;
+}
+.skill-list li {
+  overflow: hidden;
+  height: 25px; /* Initial height */
+  transition: height 0.3s ease;
+}
+
+.skill-list li:hover {
+  height: 35px; /* Expanded height */
 }
 
